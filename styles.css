@@ -1,0 +1,115 @@
+/* Reset some default styles */
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* Sidebar/Navigation */
+  .sidebar {
+    /* width: 120px; */
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-top: 20px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: rgba(211, 211, 211, 0.1);
+  }
+  
+  .sidebar i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar p {
+    margin: 0;
+  }
+  
+  /* Adjust sidebar width on small screens */
+  @media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 0;
+    }
+  
+    .sidebar a {
+        display: none;
+    }
+  
+    .content > * {
+        padding-left: 0px !important;
+    }
+  }
+  
+  /* Content */
+  .content {
+    /* padding-left: 10px; */
+    transition: margin-left 0.3s;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  .content>* {
+    padding-left: 150px;
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+  /* Header/Home */
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  /* About, Portfolio, Contact Sections */
+  section {
+    padding: 50px;
+    background-color: inherit; /* Inherit background color from the body */
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #004225;
+  }
+  
+  /* Portfolio Section */
+  #portfolio {
+    background-color: #e74c3c;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #f39c12;
+  }
+  
