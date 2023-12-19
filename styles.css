@@ -84,7 +84,7 @@ body, h1, h2, h3, ul, li {
   }
   /* Header/Home */
   header {
-    background-color: #3498db;
+    background: linear-gradient(to right, #f08080, #8b4b4b);
     color: #fff;
     padding: 50px;
     text-align: center;
@@ -100,16 +100,20 @@ body, h1, h2, h3, ul, li {
   
   /* About Section */
   #about {
-    background-color: #004225;
+    /* background-color: #004225; */
+    /* box-shadow: 5px 10px #888888; */
+    background: linear-gradient(to right, #004225, #004225c0);
   }
   
   /* Portfolio Section */
   #portfolio {
-    background-color: #e74c3c;
+    background-color: #d1c7b8;
+    background: linear-gradient(to right, #d1c7b873, #d1c7b8);
   }
   
   /* Contact Section */
   #contact {
-    background-color: #f39c12;
+    background: linear-gradient(to right, #fadadd, #fadadd8f);
+
   }
   
